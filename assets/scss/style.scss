@@ -3,3 +3,21 @@
   height: 768px;
   border: 1px solid black;
 }
+
+.professions {
+  position: relative;
+}
+.answer {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  background: #eaeaea;
+  top: 0;
+}
+.box {
+  width: 100px;
+  height: 200px;
+  top: 200px;
+  left: 200px;
+  position: absolute;
+}
