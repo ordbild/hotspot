@@ -8,8 +8,9 @@
 
 .answer {
   position: absolute;
-  width: 100px;
-  height: 200px;
+  width: 98px;
+  border: 1px solid black;
+  height: 198px;
   background: #eaeaea;
   top: 0; }
 

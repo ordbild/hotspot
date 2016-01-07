@@ -2,6 +2,9 @@ var gridWidth = 100;
 var gridHeight = 200;
 
 var cards = document.querySelectorAll('.box');
+var answers = document.querySelectorAll('.answer');
+var correctAnswers = 0;
+var numberOfAnswers = 0;
 
 [].forEach.call(cards, function (card) {
   Draggable.create(card, {
@@ -18,9 +21,20 @@ var cards = document.querySelectorAll('.box');
       }
     },
     onDragEnd: function (e) {
-      //e.target.setAttribute('data-disabled', 'true');
-      [].forEach.call(document.querySelectorAll('.answer'), function (answer) {
-        if (this.hitTest(answer, 20)) {
+      [].forEach.call(answers, function (answer) {
+        if (this.hitTest(answer, 50)) {
+          numberOfAnswers++;
+          document.getElementById('number-of-answers').innerHTML = numberOfAnswers;
+          if (answer.getAttribute('data-pair') === this.target.getAttribute('data-pair')) {
+            correctAnswers++;
+          }
+          //console.log(numberOfAnswers);
+          if (numberOfAnswers === answers.length) {
+            console.log('Antal rätt: ' + correctAnswers);
+            var p = document.createElement('p');
+            p.textContent = 'Antal rätt: ' + correctAnswers;
+            document.getElementById('playground').appendChild(p);
+          }
           this.disable();
         }
       }.bind(this));
