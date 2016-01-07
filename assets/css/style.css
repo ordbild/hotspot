@@ -6,17 +6,17 @@
 .professions {
   position: relative; }
 
-.answer {
+.description {
+  width: 100px;
+  height: 200px;
+  top: 200px;
+  left: 200px;
+  position: absolute; }
+
+.profession {
   position: absolute;
   width: 98px;
   border: 1px solid black;
   height: 198px;
   background: #eaeaea;
   top: 0; }
-
-.box {
-  width: 100px;
-  height: 200px;
-  top: 200px;
-  left: 200px;
-  position: absolute; }
