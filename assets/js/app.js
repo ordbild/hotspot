@@ -3,7 +3,39 @@
 
   var gameData = [
     {
-      profession: ''
+      profession: 'Städare',
+      description: 'Du gillar att städa',
+      image: ''
+    },
+    {
+      profession: 'Golfare',
+      description: 'Du gillar att spela golf',
+      image: ''
+    },
+    {
+      profession: 'Läkare',
+      description: 'Du räddar liv',
+      image: ''
+    },
+    {
+      profession: 'Polis',
+      description: 'Du är bra på att lösa mordgåtor',
+      image: ''
+    },
+    {
+      profession: 'Lärare',
+      description: 'Du är duktig på att lära ut',
+      image: ''
+    },
+    {
+      profession: 'Legobyggare',
+      description: 'Du bygger saker av små plastbitar.',
+      image: ''
+    },
+    {
+      profession: 'Skådespelare',
+      description: 'Du låtsas att du är någon annan',
+      image: ''
     }
   ];
 
@@ -82,8 +114,42 @@
 
     };
     
+
+    var _professions = {
+      professions: [],
+      addedIndexes: [],
+      add: function () {
+        while(this.professions.length < 5) {
+          var randomIndex = this.getRandomIndex();
+          this.professions.push(gameData[randomIndex]);
+        }
+      }, 
+      getRandomIndex: function () {
+        var randomIndex = this.randomNumberBetween(0, (gameData.length-1));
+        
+        var indexAlreadyUsed = false;
+        for (var i = this.addedIndexes.length - 1; i >= 0; i--) {
+          if (this.addedIndexes[i] === randomIndex) {
+            indexAlreadyUsed = true;
+            break;
+          }
+        }
+        
+        if (indexAlreadyUsed) {
+          return this.getRandomIndex();
+        } else {
+          this.addedIndexes.push(randomIndex);
+        }
+        return randomIndex;
+      },
+      randomNumberBetween: function(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+    };
+    
     return {
       init: function () {
+        _professions.add();
         _draggableGrid.create();
       }
     };
