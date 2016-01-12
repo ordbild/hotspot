@@ -3,7 +3,7 @@
   height: 768px;
   border: 1px solid black; }
 
-.professions {
+.game-board {
   position: relative; }
 
 .description {
@@ -11,7 +11,9 @@
   height: 200px;
   top: 200px;
   left: 200px;
-  position: absolute; }
+  position: absolute;
+  background: #fff;
+  border: 1px solid #eaeaea; }
 
 .profession {
   position: absolute;
