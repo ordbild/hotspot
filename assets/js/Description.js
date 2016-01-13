@@ -1,7 +1,10 @@
-var Description = function (matchWith, description) {
-  this.matchWith = matchWith;
-  this.description = description;
+var Description = function (index, data) {
+  this.index = index;
+  this.profession = data.profession;
+  this.description = data.description;
+  this.image = null;
   this.element = this.render();
+  this.bindEvents();
 };
 
 Description.prototype.render = function() {
@@ -14,7 +17,15 @@ Description.prototype.render = function() {
       '</div>'+
     '</div>'
   ].join('');
-  element.setAttribute('data-pair', this.matchWith);
+  //element.setAttribute('data-pair', this.matchWith);
   element.classList.add('description');
   return element;
+};
+
+Description.prototype.bindEvents = function() {
+  this.element.addEventListener('click', this.onClick);
+};
+
+Description.prototype.onClick = function(event) {
+  this.querySelector('.card').classList.toggle('flip');
 };
