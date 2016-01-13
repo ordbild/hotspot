@@ -1,26 +1,135 @@
-.playground {
+/**
+ * Colors
+ */
+$yellow: #f4bb3a;
+$orange: #e47936;
+$red: #d62631;
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #333;
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  span {
+    color: $orange;
+  }
+}
+
+#playground {
   width: 1024px;
   height: 768px;
-  border: 1px solid black;
+  background: black;
+  position: relative;
+  display: inline-block;
+}
+
+header {
+  margin: 0 auto 70px auto;
+  width: 900px;
+  clear: both;
+  float: none;
+  overflow: hidden;
+  h1 {
+    margin: 40px 0 0 0;
+    float: left;
+  }
+}
+
+#time {
+  margin-top: 40px;
+  float: right;
+  text-transform: uppercase;
+  color: white;
+  font-size: 10px;
+  span {
+    font-size: 24px;
+    font-weight: bold;
+    color: $yellow;
+  }
 }
 
 .game-board {
   position: relative;
-}
-.description {
-  width: 100px;
-  height: 200px;
-  top: 200px;
-  left: 200px;
-  position: absolute;
-  background: #fff;
-  border: 1px solid #eaeaea;
+  margin: 0 auto;
+  width: 900px;
+  height: 768px;
 }
 .profession {
   position: absolute;
-  width: 98px;
-  border: 1px solid black;
-  height: 198px;
-  background: #eaeaea;
+  width: 176px;
+  border: 2px solid black;
+  height: 226px;
+  background: $yellow;
   top: 0;
+  display: table;
+  p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+  }
+}
+.description {
+  width: 180px;
+  height: 226px;
+  top: 230px;
+  position: absolute;
+  text-align: center;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  p {
+    margin: 41px 13px 13px 13px;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: left;
+  }
+  .front,
+  .back {
+    width: 176px;
+    height: 226px;
+    background: $orange;
+  }
+  .card {
+    border: 2px solid black;
+    width: 176px;
+    height: 226px;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  .card.flip {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  .front,
+  .back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .front {
+    z-index: 2;
+    background: url('../img/logo.svg') no-repeat center center $orange;
+    background-size: 80%;
+  }
+  .back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
 }

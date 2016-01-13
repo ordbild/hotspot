@@ -1,24 +1,113 @@
-.playground {
+/**
+ * Colors
+ */
+body {
+  margin: 0;
+  padding: 0;
+  background: #333;
+  font-family: sans-serif; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+h1 {
+  color: white;
+  text-transform: uppercase; }
+  h1 span {
+    color: #e47936; }
+
+#playground {
   width: 1024px;
   height: 768px;
-  border: 1px solid black; }
+  background: black;
+  position: relative;
+  display: inline-block; }
+
+header {
+  margin: 0 auto 70px auto;
+  width: 900px;
+  clear: both;
+  float: none;
+  overflow: hidden; }
+  header h1 {
+    margin: 40px 0 0 0;
+    float: left; }
+
+#time {
+  margin-top: 40px;
+  float: right;
+  text-transform: uppercase;
+  color: white;
+  font-size: 10px; }
+  #time span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f4bb3a; }
 
 .game-board {
-  position: relative; }
-
-.description {
-  width: 100px;
-  height: 200px;
-  top: 200px;
-  left: 200px;
-  position: absolute;
-  background: #fff;
-  border: 1px solid #eaeaea; }
+  position: relative;
+  margin: 0 auto;
+  width: 900px;
+  height: 768px; }
 
 .profession {
   position: absolute;
-  width: 98px;
-  border: 1px solid black;
-  height: 198px;
-  background: #eaeaea;
-  top: 0; }
+  width: 176px;
+  border: 2px solid black;
+  height: 226px;
+  background: #f4bb3a;
+  top: 0;
+  display: table; }
+  .profession p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold; }
+
+.description {
+  width: 180px;
+  height: 226px;
+  top: 230px;
+  position: absolute;
+  text-align: center;
+  -webkit-perspective: 1000;
+  perspective: 1000; }
+  .description p {
+    margin: 41px 13px 13px 13px;
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: left; }
+  .description .front,
+  .description .back {
+    width: 176px;
+    height: 226px;
+    background: #e47936; }
+  .description .card {
+    border: 2px solid black;
+    width: 176px;
+    height: 226px;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative; }
+  .description .card.flip {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg); }
+  .description .front,
+  .description .back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .description .front {
+    z-index: 2;
+    background: url("../img/logo.svg") no-repeat center center #e47936;
+    background-size: 80%; }
+  .description .back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg); }

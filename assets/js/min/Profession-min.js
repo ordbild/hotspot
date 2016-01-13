@@ -1,0 +1,1 @@
+var Profession=function(t,e){this.matchWith=t,this.profession=e};Profession.prototype.createElement=function(){var t=document.createElement("div");return t.innerHTML="<p>"+this.profession+"</p>",t.style.left=180*i+"px",t.setAttribute("data-pair",this.matchWith),t.classList.add("profession"),t};

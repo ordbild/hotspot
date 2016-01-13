@@ -13,8 +13,6 @@
     var checkAnswer = function (profession, description) {
       numberOfAnswers++;
       
-      document.getElementById('number-of-answers').innerHTML = numberOfAnswers;
-      
       if (profession.getAttribute('data-pair') === description.getAttribute('data-pair')) {
         correctAnswers++;
       }
@@ -33,8 +31,8 @@
     };
 
     var _draggableGrid = {
-      gridWidth: 100,
-      gridHeight: 200,
+      gridWidth: 180,
+      gridHeight: 230,
 
       create: function (descriptions) {
         [].forEach.call(descriptions, this.makeDraggable.bind(this));        
@@ -55,11 +53,6 @@
               return Math.round(endValue / _this.gridHeight) * _this.gridHeight;
             }
           },
-          onDragStart: function (e) {
-            if (numberOfAnswers === 0) {
-              clock.start();
-            }
-          },
           onDragEnd: function (e) {
             [].forEach.call(elements.professions, function (profession) {
               if (this.hitTest(profession, 50)) {
@@ -73,31 +66,37 @@
 
     }; // _draggableGrid
 
-    var _createElements = function () {
+    var _createElements = function (professions) {
       var elements = {
         professions: [],
         descriptions: []
       };
       var gameBoard = document.querySelector('.game-board');
-      for (var i = 0; i < _professions.professions.length; i++) {
-        var profession = document.createElement('div');
-        profession.innerHTML = '<p>' + _professions.professions[i].profession + '</p>';
-        profession.style.left = (i * 100) + 'px';
-        profession.setAttribute('data-pair', i);
-        profession.classList.add('profession');
-        elements.professions.push(profession);
-        gameBoard.appendChild(profession);
+      for (var i = 0; i < professions.length; i++) {
+        var profession = new Profession(i, professions[i].profession);
+        elements.professions.push(profession.element);
+        gameBoard.appendChild(profession.element);
       
-        var description = document.createElement('div');
-        description.innerHTML = '<p>' + _professions.professions[i].description + '</p>';
-        description.setAttribute('data-pair', i);
-        description.classList.add('description');
-        elements.descriptions.push(description);
+        var description = new Description(i, professions[i].description);
+        elements.descriptions.push(description.element);
       };
       return elements;
     };
 
-    var _professions = {
+    var ProfessionsCollection = function (professions) {
+      this.professions = professions;
+      this.elements = this.createElements();
+    };
+    ProfessionsCollection.prototype.createElements = function() {
+      var elements = [];
+      for (var i = 0; i < this.professions.length; i++) {
+        var profession = new Profession(this.professions[i].profession);
+        elements.push(profession.element);
+      };
+      return elements;
+    };
+
+    var randomProfessions = {
       professions: [],
       addedIndexes: [],
       get: function () {
@@ -108,26 +107,46 @@
         }
         return this.professions;
       }
-    }; // _professions
+    }; // randomProfessions
 
     var _addDescriptionsToGameBoard = function () {
       var gameBoard = document.querySelector('.game-board');
       var randomIndex = new randomArrayIndex(elements.descriptions);
       while (randomIndex.addedIndexes.length < 5) {
         var index = randomIndex.get();
+        elements.descriptions[index].style.left = ((randomIndex.addedIndexes.length - 1) * 180) + 'px';
+        
+        elements.descriptions[index].addEventListener('click', function (event) {
+          this.querySelector('.card').classList.toggle('flip');
+        });
+
         gameBoard.appendChild(elements.descriptions[index]);
       }
     }
 
     return {
       
-      professions: _professions.get(),
+      professions: randomProfessions.get(),
+
+      events: function () {
+        document.querySelector('button').addEventListener('click', function (event) {
+          this.startGame();
+        }.bind(this));
+      },
 
       init: function () {
+        var professionsCollection = new ProfessionsCollection(this.professions);
+        console.log(professionsCollection);
+
         elements = _createElements(this.professions);        
         _draggableGrid.create(elements.descriptions);
         _addDescriptionsToGameBoard();
-      }
+        this.events();
+      },
+
+      startGame: function () {
+        clock.start();
+      },
 
     };
 
