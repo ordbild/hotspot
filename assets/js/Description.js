@@ -1,10 +1,10 @@
 var Description = function (matchWith, description) {
   this.matchWith = matchWith;
   this.description = description;
-  this.element = this.createElement();
+  this.element = this.render();
 };
 
-Description.prototype.createElement = function() {
+Description.prototype.render = function() {
   var element = document.createElement('div');
   element.innerHTML = [
     '<div class="card">'+
