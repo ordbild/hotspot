@@ -35,8 +35,8 @@
 		},
 	"\/assets\/js\/Description.js": {
 		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/Description.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/Description-min.js",
 		"outputPathIsOutsideProject": 0,
@@ -46,8 +46,8 @@
 		},
 	"\/assets\/js\/DescriptionsCollection.js": {
 		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/DescriptionsCollection.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/DescriptionsCollection-min.js",
 		"outputPathIsOutsideProject": 0,
@@ -156,8 +156,8 @@
 		},
 	"\/assets\/js\/Profession.js": {
 		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/Profession.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/Profession-min.js",
 		"outputPathIsOutsideProject": 0,
@@ -167,8 +167,8 @@
 		},
 	"\/assets\/js\/ProfessionsCollection.js": {
 		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/ProfessionsCollection.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/ProfessionsCollection-min.js",
 		"outputPathIsOutsideProject": 0,

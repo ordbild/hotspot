@@ -1,8 +1,10 @@
 var Description = function (index, data) {
   this.index = index;
+
   this.profession = data.profession;
   this.description = data.description;
   this.image = null;
+
   this.element = this.render();
   this.bindEvents();
 };
@@ -13,11 +15,12 @@ Description.prototype.render = function() {
     '<div class="card">'+
       '<div class="front"></div>'+
       '<div class="back">'+
+      '<h3>&nbsp;</h3>'+
         '<p>' + this.description + '</p>'+
       '</div>'+
     '</div>'
   ].join('');
-  //element.setAttribute('data-pair', this.matchWith);
+  element.setAttribute('data-pair', this.profession);
   element.classList.add('description');
   return element;
 };
@@ -27,5 +30,5 @@ Description.prototype.bindEvents = function() {
 };
 
 Description.prototype.onClick = function(event) {
-  this.querySelector('.card').classList.toggle('flip');
+  //this.querySelector('.card').classList.toggle('flip');
 };

@@ -47,6 +47,7 @@ header {
 
 #time {
   margin-top: 40px;
+  width: 100px;
   float: right;
   text-transform: uppercase;
   color: white;
@@ -64,21 +65,27 @@ header {
   width: 900px;
   height: 768px;
 }
+h3 {
+  margin: 13px 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
 .profession {
   position: absolute;
   width: 176px;
-  border: 2px solid black;
   height: 226px;
   background: $yellow;
   top: 0;
   display: table;
-  p {
+  border: 2px solid black;
+  &.hover {
+    border-color: $orange;
+  }
+  h3 {
     display: table-cell;
     vertical-align: middle;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    font-weight: bold;
   }
 }
 .description {
@@ -90,7 +97,7 @@ header {
   -webkit-perspective: 1000;
   perspective: 1000;
   p {
-    margin: 41px 13px 13px 13px;
+    margin: 7px 13px 13px 13px;
     font-size: 14px;
     line-height: 1.3;
     text-align: left;
@@ -100,6 +107,9 @@ header {
     width: 176px;
     height: 226px;
     background: $orange;
+  }
+  &.disabled .back {
+    opacity: .5;
   }
   .card {
     border: 2px solid black;
