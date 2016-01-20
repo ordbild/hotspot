@@ -19,8 +19,15 @@
   Clock.prototype.tick = function() {
     var currentTime = new Date();
     this.elapsedTime = (currentTime.getTime() - this.startTime.getTime()) / 1000;
+    
+    var minutes = Math.floor(this.elapsedTime / 60);
+    minutes = (minutes < 10) ? '0' + minutes : minutes;
+    
+    var seconds = this.elapsedTime % 60;
+    seconds = parseFloat(Math.round(seconds * 100) / 100).toFixed(2);
+
     if (this.element) {
-      this.element.innerHTML = this.elapsedTime;
+      this.element.innerHTML = minutes + '.' + seconds;
     }
     if (this.isTicking) {
       setTimeout(this.tick.bind(this), 50);
