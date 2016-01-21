@@ -41,6 +41,10 @@
           this.professions.push(gameData[index]);
         }
         return this.professions;
+      },
+      reset: function () {
+        this.professions = [];
+        this.addedIndexes = [];
       }
     }; // randomProfessions
 
@@ -51,7 +55,7 @@
         descriptions[index].element.style.left = ((randomIndex.addedIndexes.length - 1) * 180) + 'px';  
         addToGameBoard(descriptions[index].element);
       }
-    }
+    };
 
     var gameBoard = document.querySelector('.game-board');
     var addToGameBoard = function (element) {
@@ -60,15 +64,18 @@
 
     return {
       
-      professions: randomProfessions.get(),
+      professions: null,
 
-      events: function () {
-        document.querySelector('button').addEventListener('click', function (event) {
-          this.startGame();
-        }.bind(this));
+      bindEvents: function () {
+        document.querySelector('button').addEventListener('click', this.startGame.bind(this));
       },
 
+      unbindEvents: function () {
+        document.querySelector('button').removeEventListener('click', this.startGame.bind(this));
+      }, 
+
       init: function () {
+        this.professions = randomProfessions.get();
         this.professionsCollection = new ProfessionsCollection(this.professions);
         for (var i = 0; i < this.professionsCollection.elements.length; i++) {
           addToGameBoard(this.professionsCollection.elements[i]);
@@ -77,7 +84,7 @@
         this.descriptionsCollection = new DescriptionsCollection(this.professions);
         _addDescriptionsToGameBoard(this.descriptionsCollection.descriptions);
         
-        this.events();
+        //this.bindEvents();
       },
 
       makeDraggable: function (description) {
@@ -142,11 +149,29 @@
         }
       }, // checkAnswer
 
-    };
+      resetGame: function () {
+        for (var i = gameBoard.childNodes.length - 1; i >= 0; i--) {
+          gameBoard.childNodes[i].remove();
+        };
+
+        clock.reset();
+
+        this.unbindEvents();
+
+        randomProfessions.reset();
+
+        this.professionsCollection = null;
+        this.descriptionsCollection = null;
+
+        this.init();
+      }
+
+    }; // return
 
   })(); // MatchMaker
 
-  MatchMaker.init();
+  window.MatchMaker = MatchMaker;
+  //MatchMaker.init();
 
 })(window, document);
 

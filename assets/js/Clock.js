@@ -8,8 +8,7 @@
     if (element) {
       this.element = element;
     }
-    this.elapsedTime = 0;
-    this.isTicking = false;
+    this.reset();
   };
   Clock.prototype.start = function() {
     this.startTime = new Date();
@@ -34,6 +33,10 @@
     }
   };
   Clock.prototype.stop = function() {
+    this.isTicking = false;
+  };
+  Clock.prototype.reset = function() {
+    this.elapsedTime = 0;
     this.isTicking = false;
   };
 
