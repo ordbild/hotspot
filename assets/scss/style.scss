@@ -143,3 +143,17 @@ h3 {
     transform: rotateY(180deg);
   }
 }
+
+.icon-correct-wrong {
+  width: 176px;
+  height: 226px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.game-finished .correct .icon-correct-wrong {
+  background: green;
+}
+.game-finished .wrong .icon-correct-wrong {
+  background: red;
+}

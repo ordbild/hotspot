@@ -13,6 +13,7 @@ Description.prototype.render = function() {
   var element = document.createElement('div');
   element.innerHTML = [
     '<div class="card">'+
+    '<div class="icon-correct-wrong"></div>'+
       '<div class="front"></div>'+
       '<div class="back">'+
       '<h3>&nbsp;</h3>'+

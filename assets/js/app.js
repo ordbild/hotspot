@@ -53,13 +53,15 @@
     var addToGameBoard = function (element) {
       gameBoard.appendChild(element);
     };
-    var btn = document.querySelector('button');
+    var btn = document.querySelector('#start-game');
+    var resetBtn = document.querySelector('#reset-game');
     return {
       
       professions: null,
 
       bindEvents: function () {
         btn.addEventListener('click', this.startGame.bind(this), true);
+        resetBtn.addEventListener('click', this.resetGame.bind(this), true);
       },
 
       unbindEvents: function () {
@@ -126,9 +128,10 @@
       },
 
       stopGame: function () {
+        setTimeout(function () {
+          document.body.classList.add('game-finished');
+        }, 500)
         clock.stop();
-        console.log('Rätta svar: ' + correctAnswers);
-
       },
 
       turnCard: function () {
@@ -156,6 +159,9 @@
           gameBoard.childNodes[i].remove();
         };
 
+        document.body.classList.remove('game-finished');
+        
+        clock.stop();
         clock.reset();
 
         this.unbindEvents();
