@@ -18,17 +18,9 @@
     var gridHeight = 230;
     var draggableSettings = {
       type: 'x,y',
-      edgeResistance: 0.65,
+      edgeResistance: 1,
       bounds: '.game-board',
       throwProps:true,
-      snap: {
-        x: function(endValue) {
-          return Math.round(endValue / gridWidth) * gridWidth;
-        },
-        y: function(endValue) {
-          return Math.round(endValue / gridHeight) * gridHeight;
-        }
-      },
     };
 
     var randomProfessions = {
@@ -61,17 +53,17 @@
     var addToGameBoard = function (element) {
       gameBoard.appendChild(element);
     };
-
+    var btn = document.querySelector('button');
     return {
       
       professions: null,
 
       bindEvents: function () {
-        document.querySelector('button').addEventListener('click', this.startGame.bind(this));
+        btn.addEventListener('click', this.startGame.bind(this), true);
       },
 
       unbindEvents: function () {
-        document.querySelector('button').removeEventListener('click', this.startGame.bind(this));
+        btn.removeEventListener('click', this.startGame.bind(this), true);
       }, 
 
       init: function () {
@@ -89,9 +81,10 @@
 
       makeDraggable: function (description) {
         var _this = this;
+        var sensitivity = 100;
         draggableSettings.onDrag = function (e) {
           [].forEach.call(_this.professionsCollection.elements, function (profession) {
-            if (this.hitTest(profession, 50)) {
+            if (this.hitTest(profession, sensitivity)) {
               profession.classList.add('hover');
             } else {
               profession.classList.remove('hover');
@@ -99,9 +92,18 @@
           }.bind(this));
         };
         draggableSettings.onDragEnd = function (e) {
+          var hoverCount = document.querySelectorAll('.hover').length;
           [].forEach.call(_this.professionsCollection.elements, function (profession) {
-            if (this.hitTest(profession, 50)) {
-              _this.cardHasBeenPlaced(profession, this);
+            if (this.hitTest(profession, sensitivity) && hoverCount === 1) {
+              TweenLite.to(this.target, 0.5, {
+                x: Math.round(this.target._gsTransform.x / gridWidth) * gridWidth,
+                y: -230,
+                delay: 0.1,
+                ease: Power2.easeInOut,
+                onComplete: function () {
+                  _this.cardHasBeenPlaced(profession, this);
+                }.bind(this)
+              });
             }
           }.bind(this));
         };
@@ -171,7 +173,8 @@
   })(); // MatchMaker
 
   window.MatchMaker = MatchMaker;
-  //MatchMaker.init();
+  MatchMaker.bindEvents();
+  MatchMaker.init();
 
 })(window, document);
 
