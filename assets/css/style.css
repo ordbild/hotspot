@@ -34,6 +34,22 @@ header {
     margin: 40px 0 0 0;
     float: left; }
 
+.button {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: black;
+  width: 176px;
+  text-shadow: 0 1px 0 #FE6;
+  display: block;
+  line-height: 1.2;
+  cursor: pointer;
+  padding: 0.4em 1em;
+  border: 1px solid #fec126;
+  border-radius: 4px;
+  background: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0.11, #fec126), color-stop(0.53, #fed13e)) #fecb30; }
+  .button:focus {
+    outline: 0; }
+
 #time {
   margin-top: 40px;
   width: 100px;
