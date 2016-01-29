@@ -114,7 +114,7 @@ h3 {
     left: 0; }
   .description .front {
     z-index: 2;
-    background: url("../img/logo.svg") no-repeat center center #e47936;
+    background: url("../img/logo.svg") no-repeat center 59px #e47936;
     background-size: 80%; }
   .description .back {
     -webkit-transform: rotateY(180deg);
