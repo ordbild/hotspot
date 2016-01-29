@@ -60,7 +60,16 @@
       professions: null,
 
       bindEvents: function () {
-        btn.addEventListener('click', this.startGame.bind(this), true);
+        btn.addEventListener('click', function(){
+            if (gameInProgress) {
+                console.log('gameInProgress');
+                this.stopGame();
+                this.resetGame();
+            } else {
+                console.log('startgame');
+                this.startGame();
+            }
+        }.bind(this), true);
         //resetBtn.addEventListener('click', this.resetGame.bind(this), true);
       },
 
@@ -162,6 +171,7 @@
 
       resetGame: function () {
         numberOfAnswers = 0;
+       
         for (var i = gameBoard.childNodes.length - 1; i >= 0; i--) {
           gameBoard.childNodes[i].remove();
         };

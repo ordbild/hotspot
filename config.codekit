@@ -176,17 +176,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 0
 		},
-	"\/assets\/js\/randomArrayIndex.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/assets\/js\/randomArrayIndex.js",
-		"outputAbbreviatedPath": "\/assets\/js\/min\/randomArrayIndex-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 0
-		},
 	"\/assets\/scss\/style.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
