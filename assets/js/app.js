@@ -10,6 +10,7 @@
      */
     var correctAnswers = 0;
     var numberOfAnswers = 0;
+    var gameInProgress = false;
 
     /**
      * Draggable grid settings
@@ -54,14 +55,13 @@
       gameBoard.appendChild(element);
     };
     var btn = document.querySelector('#start-game');
-    var resetBtn = document.querySelector('#reset-game');
     return {
       
       professions: null,
 
       bindEvents: function () {
         btn.addEventListener('click', this.startGame.bind(this), true);
-        resetBtn.addEventListener('click', this.resetGame.bind(this), true);
+        //resetBtn.addEventListener('click', this.resetGame.bind(this), true);
       },
 
       unbindEvents: function () {
@@ -113,6 +113,7 @@
       }, // makeDraggable
 
       cardHasBeenPlaced: function (profession, draggableInstance) {
+        console.log('cardHasBeenPlaced');
         this.checkAnswer(profession, draggableInstance.target);
         draggableInstance.disable();
         setTimeout(function () {
@@ -123,8 +124,12 @@
       },
 
       startGame: function () {
+        if (gameInProgress) {
+            this.resetGame();
+        }
         clock.start();
         this.turnCard();
+        gameInProgress = true;
       },
 
       stopGame: function () {
@@ -132,6 +137,7 @@
           document.body.classList.add('game-finished');
         }, 500)
         clock.stop();
+        gameInProgress = false;
       },
 
       turnCard: function () {
@@ -155,6 +161,7 @@
       }, // checkAnswer
 
       resetGame: function () {
+        numberOfAnswers = 0;
         for (var i = gameBoard.childNodes.length - 1; i >= 0; i--) {
           gameBoard.childNodes[i].remove();
         };
