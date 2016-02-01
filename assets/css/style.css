@@ -66,7 +66,22 @@ header {
   position: relative;
   margin: 0 auto;
   width: 900px;
-  height: 768px; }
+  height: 458px; }
+
+.score-comments {
+  width: 898px;
+  height: 226px;
+  position: relative;
+  left: 62px;
+  top: -226px;
+  display: none; }
+  .score-comments .comment {
+    height: 226px;
+    display: none; }
+  .score-comments h2 {
+    margin: 0;
+    text-align: center;
+    color: white; }
 
 h3 {
   margin: 13px 0 0;
@@ -148,3 +163,6 @@ h3 {
 
 .game-finished .wrong .icon-correct-wrong {
   background: red; }
+
+.visible {
+  display: block !important; }

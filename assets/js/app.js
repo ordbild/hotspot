@@ -50,6 +50,16 @@
       }
     };
 
+    var scoreComments = document.querySelector('.score-comments');
+    var showScoreComment = function (correctAnswers) {
+      scoreComments.classList.add('visible');
+      document.querySelector('.comment[data-score="'+correctAnswers+'"]').classList.add('visible');
+    };
+    var hideScoreComment = function () {
+      scoreComments.classList.remove('visible');
+      scoreComments.querySelector('.visible').classList.remove('visible');
+    };
+
     var gameBoard = document.querySelector('.game-board');
     var addToGameBoard = function (element) {
       gameBoard.appendChild(element);
@@ -70,12 +80,7 @@
         }.bind(this), true);
       },
 
-      unbindEvents: function () {
-        btn.removeEventListener('click', this.startGame.bind(this), true);
-      }, 
-
       init: function () {
-        console.log('init');
         this.professions = randomProfessions.get();
         this.professionsCollection = new ProfessionsCollection(this.professions);
         for (var i = 0; i < this.professionsCollection.elements.length; i++) {
@@ -84,13 +89,12 @@
         
         this.descriptionsCollection = new DescriptionsCollection(this.professions);
         _addDescriptionsToGameBoard(this.descriptionsCollection.descriptions);
-        
-        //this.bindEvents();
       },
 
       makeDraggable: function (description) {
         var _this = this;
         var sensitivity = 100;
+        
         draggableSettings.onDrag = function (e) {
           [].forEach.call(_this.professionsCollection.elements, function (profession) {
             if (this.hitTest(profession, sensitivity)) {
@@ -100,6 +104,7 @@
             }
           }.bind(this));
         };
+        
         draggableSettings.onDragEnd = function (e) {
           var hoverCount = document.querySelectorAll('.hover').length;
           [].forEach.call(_this.professionsCollection.elements, function (profession) {
@@ -116,6 +121,7 @@
             }
           }.bind(this));
         };
+
         Draggable.create(description, draggableSettings);
       }, // makeDraggable
 
@@ -130,7 +136,6 @@
       },
 
       startGame: function () {
-        console.log('startGame');
         clock.start();
         this.turnCard();
         btn.innerHTML = 'Börja om';
@@ -138,9 +143,7 @@
       },
 
       stopGame: function () {
-        console.log('stopGame');
         setTimeout(function () {
-          console.log('classlist add'); 
           document.body.classList.add('game-finished');
         }, 500)
         clock.stop();
@@ -161,26 +164,28 @@
         }
         if (numberOfAnswers === 5) {
           this.stopGame();
+          showScoreComment(correctAnswers);
         } else {
           this.turnCard();
         }
       }, // checkAnswer
 
       resetGame: function () {
-        console.log('resetGame');
         btn.innerHTML = 'Starta';
         gameInProgress = false;
         numberOfAnswers = 0;
+
+        hideScoreComment();
         for (var i = gameBoard.childNodes.length - 1; i >= 0; i--) {
           gameBoard.childNodes[i].remove();
         };
 
-        document.body.classList.remove('game-finished');
-        
+        setTimeout(function () {
+          document.body.classList.remove('game-finished');
+        }, 600);
+
         clock.stop();
         clock.reset();
-
-        this.unbindEvents();
 
         randomProfessions.reset();
 
@@ -188,7 +193,7 @@
         this.descriptionsCollection = null;
 
         this.init();
-      }
+      } // resetGame
 
     }; // return
 
