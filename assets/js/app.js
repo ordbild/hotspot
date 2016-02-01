@@ -62,15 +62,12 @@
       bindEvents: function () {
         btn.addEventListener('click', function(){
             if (gameInProgress) {
-                console.log('gameInProgress');
                 this.stopGame();
                 this.resetGame();
             } else {
-                console.log('startgame');
                 this.startGame();
             }
         }.bind(this), true);
-        //resetBtn.addEventListener('click', this.resetGame.bind(this), true);
       },
 
       unbindEvents: function () {
@@ -78,6 +75,7 @@
       }, 
 
       init: function () {
+        console.log('init');
         this.professions = randomProfessions.get();
         this.professionsCollection = new ProfessionsCollection(this.professions);
         for (var i = 0; i < this.professionsCollection.elements.length; i++) {
@@ -122,7 +120,6 @@
       }, // makeDraggable
 
       cardHasBeenPlaced: function (profession, draggableInstance) {
-        console.log('cardHasBeenPlaced');
         this.checkAnswer(profession, draggableInstance.target);
         draggableInstance.disable();
         setTimeout(function () {
@@ -133,20 +130,20 @@
       },
 
       startGame: function () {
-        if (gameInProgress) {
-            this.resetGame();
-        }
+        console.log('startGame');
         clock.start();
         this.turnCard();
+        btn.innerHTML = 'Börja om';
         gameInProgress = true;
       },
 
       stopGame: function () {
+        console.log('stopGame');
         setTimeout(function () {
+          console.log('classlist add'); 
           document.body.classList.add('game-finished');
         }, 500)
         clock.stop();
-        gameInProgress = false;
       },
 
       turnCard: function () {
@@ -170,8 +167,10 @@
       }, // checkAnswer
 
       resetGame: function () {
+        console.log('resetGame');
+        btn.innerHTML = 'Starta';
+        gameInProgress = false;
         numberOfAnswers = 0;
-       
         for (var i = gameBoard.childNodes.length - 1; i >= 0; i--) {
           gameBoard.childNodes[i].remove();
         };
