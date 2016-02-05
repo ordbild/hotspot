@@ -97,12 +97,13 @@ h3 {
   background: #f4bb3a;
   top: 0;
   display: table;
-  border: 2px solid black; }
+  border: 2px solid black;
+  /*h3 {
+    display: table-cell;
+    vertical-align: middle;
+  }*/ }
   .profession.hover {
     border-color: #e47936; }
-  .profession h3 {
-    display: table-cell;
-    vertical-align: middle; }
 
 .description {
   width: 180px;
