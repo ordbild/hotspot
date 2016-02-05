@@ -52,8 +52,13 @@
 
     var scoreComments = document.querySelector('.score-comments');
     var showScoreComment = function (correctAnswers) {
-      scoreComments.classList.add('visible');
-      document.querySelector('.comment[data-score="'+correctAnswers+'"]').classList.add('visible');
+      setTimeout(function() {
+        scoreComments.classList.add('visible');
+        var comment = document.querySelector('.comment[data-score="'+correctAnswers+'"]');
+        comment.classList.add('visible');
+        comment.classList.add('animated');
+        comment.classList.add('flipInY');
+      }, 500);
     };
     var hideScoreComment = function () {
       scoreComments.classList.remove('visible');
