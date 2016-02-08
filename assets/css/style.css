@@ -125,7 +125,8 @@ h3 {
   .description .back {
     width: 176px;
     height: 226px;
-    background: #e47936; }
+    background: #e47936;
+    z-index: 1; }
   .description.disabled .back {
     opacity: .5; }
   .description .card {
@@ -162,11 +163,17 @@ h3 {
   top: 0;
   left: 0; }
 
+.game-finished .disabled .back {
+  opacity: 1;
+  background: none; }
+  .game-finished .disabled .back p {
+    color: white; }
+
 .game-finished .correct .icon-correct-wrong {
-  background: green; }
+  background: #00a03a; }
 
 .game-finished .wrong .icon-correct-wrong {
-  background: red; }
+  background: #e20713; }
 
 .visible {
   display: block !important; }

@@ -148,6 +148,7 @@ h3 {
     width: $cardWidth;
     height: 226px;
     background: $orange;
+    z-index: 1;
   }
   &.disabled .back {
     opacity: .5;
@@ -192,11 +193,20 @@ h3 {
   top: 0;
   left: 0;
 }
+.game-finished {
+    .disabled .back {
+        opacity: 1;
+        background: none;
+        p {
+            color: white;
+        }
+    };
+}
 .game-finished .correct .icon-correct-wrong {
-  background: green;
+  background: $green;
 }
 .game-finished .wrong .icon-correct-wrong {
-  background: red;
+  background: $red;
 }
 
 .visible {
