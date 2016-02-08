@@ -1,15 +1,17 @@
 /**
  * Colors
  */
-$yellow: #f4bb3a;
+$yellow: #fdc300;
 $orange: #e47936;
-$red: #d62631;
+$red: #e20713; 
+$grey: #a2a2a0;
+$green: #00a03a;
 $cardWidth : 176px;
 
 body {
   margin: 0;
   padding: 0;
-  background: #000;
+  background: $grey;
   font-family: sans-serif;
 }
 
@@ -22,14 +24,14 @@ h1 {
   color: white;
   text-transform: uppercase;
   span {
-    color: $orange;
+    color: black;
   }
 }
 
 #playground {
   width: 1024px;
   height: 768px;
-  background: black;
+  background: $grey;
   position: relative;
   display: inline-block;
 }
@@ -69,7 +71,7 @@ header {
   width: 100px;
   float: right;
   text-transform: uppercase;
-  color: white;
+  color: black;
   font-size: 10px;
   span {
     font-size: 24px;
@@ -118,7 +120,7 @@ h3 {
   background: $yellow;
   top: 0;
   display: table;
-  border: 2px solid black;
+  border: 2px solid $grey;
   &.hover {
     border-color: $orange;
   }
@@ -151,7 +153,7 @@ h3 {
     opacity: .5;
   }
   .card {
-    border: 2px solid black;
+    border: 2px solid $grey;
     width: 176px;
     height: 226px;
     -webkit-transition: 0.6s;

@@ -1,61 +1,62 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Hotspot</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  </head>
-  <body>
-    
-    <div id="playground">
-      <header>
-        <h1><span>Kom ihåg</span> våra viktiga jobb</h1>
-        <div id="time">Tid:<br>
-          <span>00.00</span>
-        </div>
-        <div style="clear: both; float: left;">
-            <button class="button" id="start-game">Starta</button>
-        </div>
-        </header>
+    <head>
+        <meta charset="utf-8">
+        <title>Hotspot</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+    <body>
 
-      <div class="game-board"></div>
-      <div class="score-comments">
-        <div class="comment animated" data-score="0">
-            <h1>– Wow, alla rätt! Du har koll på våra viktiga jobb.<br>Fick du en vinnartid också?</h1>
-        </div>
-        <div class="comment animated" data-score="1">
-            <h1>– Fyra rätt, imponerande! Du kanske vill vara med<br>och göra livet lite enklare för Karlstadsborna?</h1>
-        </div>
-        <div class="comment animated" data-score="2">
-            <h1>– Tre rätt, bra jobbat! Vill du vara med<br>och tillverka bra dagar hos oss?</h1>
-        </div>
-        <div class="comment animated" data-score="3">
-            <h1>– Två rätt. Då finns det utvecklingsmöjligheter.<br>Precis som hos oss.</h1>
-        </div>
-        <div class="comment animated" data-score="4">
-            <h1>– Ett rätt. Hmm, du verkar lite okoncentrerad.<br>Någon tenta som spökar? </h1>
-        </div>
-        <div class="comment animated" data-score="5">
-            <h1>– Noll. Zero. Null. Skojar du med oss?<br>Nu kan det bara bli bättre. Kom igen!</h1>
-        </div>
-      </div>
+        <div id="playground">
+            <header>
+                <h1><span>Gissa mitt</span> viktiga jobb</h1>
+                <div id="time">Tid:<br>
+                    <span>00.00</span>
+                </div>
+                <div style="clear: both; float: left;">
+                    <button class="button" id="start-game">Starta</button>
+                    <span>Lagt kort ligger, så fokus fran början</span>
+                </div>
+            </header>
 
-    </div>
+            <div class="game-board"></div>
+            <div class="score-comments">
+                <div class="comment animated" data-score="5">
+                    <h1>– Wow, alla rätt! Du har koll på våra viktiga jobb.<br>Fick du en vinnartid också?</h1>
+                </div>
+                <div class="comment animated" data-score="4">
+                    <h1>– Fyra rätt, imponerande! Du kanske vill vara med<br>och göra livet lite enklare för Karlstadsborna?</h1>
+                </div>
+                <div class="comment animated" data-score="3">
+                    <h1>– Tre rätt, bra jobbat! Vill du vara med<br>och tillverka bra dagar hos oss?</h1>
+                </div>
+                <div class="comment animated" data-score="2">
+                    <h1>– Två rätt. Då finns det utvecklingsmöjligheter.<br>Precis som hos oss.</h1>
+                </div>
+                <div class="comment animated" data-score="1">
+                    <h1>– Ett rätt. Hmm, du verkar lite okoncentrerad.<br>Någon tenta som spökar? </h1>
+                </div>
+                <div class="comment animated" data-score="0">
+                    <h1>– Noll. Zero. Null. Skojar du med oss?<br>Nu kan det bara bli bättre. Kom igen!</h1>
+                </div>
+            </div>
 
-    <script src="assets/js/gamedata.js"></script>
-    <script src="assets/js/DescriptionsCollection.js"></script>
-    <script src="assets/js/Description.js"></script>
-    <script src="assets/js/ProfessionsCollection.js"></script>
-    <script src="assets/js/Profession.js"></script>
+        </div>
 
-    <script src="assets/tweenlite/TweenLite.js"></script>
-    <script src="assets/tweenlite/utils/Draggable.js"></script>
-    <script src="assets/tweenlite/plugins/ThrowPropsPlugin.js"></script>
-    <script src="assets/tweenlite/plugins/CSSPlugin.js"></script>
-    
-    <script src="assets/js/Clock.js"></script>
-    <script src="assets/js/randomArrayIndex.js"></script>
-    <script src="assets/js/app.js"></script>
-  </body>
+        <script src="assets/js/gamedata.js"></script>
+        <script src="assets/js/DescriptionsCollection.js"></script>
+        <script src="assets/js/Description.js"></script>
+        <script src="assets/js/ProfessionsCollection.js"></script>
+        <script src="assets/js/Profession.js"></script>
+
+        <script src="assets/tweenlite/TweenLite.js"></script>
+        <script src="assets/tweenlite/utils/Draggable.js"></script>
+        <script src="assets/tweenlite/plugins/ThrowPropsPlugin.js"></script>
+        <script src="assets/tweenlite/plugins/CSSPlugin.js"></script>
+
+        <script src="assets/js/Clock.js"></script>
+        <script src="assets/js/randomArrayIndex.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
 </html>
