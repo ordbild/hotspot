@@ -52,6 +52,7 @@
 
     var scoreComments = document.querySelector('.score-comments');
     var showScoreComment = function (correctAnswers) {
+      console.log('correctAnswers: ' + correctAnswers);
       setTimeout(function() {
         scoreComments.classList.add('visible');
         var comment = document.querySelector('.comment[data-score="'+correctAnswers+'"]');
@@ -167,6 +168,7 @@
         } else {
           description.classList.add('wrong');
         }
+        console.log(numberOfAnswers);
         if (numberOfAnswers === 5) {
           this.stopGame();
           showScoreComment(correctAnswers);
@@ -179,6 +181,7 @@
         btn.innerHTML = 'Starta';
         gameInProgress = false;
         numberOfAnswers = 0;
+        correctAnswers = 0;
 
         hideScoreComment();
         for (var i = gameBoard.childNodes.length - 1; i >= 0; i--) {

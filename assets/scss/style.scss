@@ -8,6 +8,9 @@ $grey: #a2a2a0;
 $green: #00a03a;
 $cardWidth : 176px;
 
+$wrong: #c41a1b;
+$correct: #00a03a;
+
 body {
   margin: 0;
   padding: 0;
@@ -48,6 +51,21 @@ header {
   }
 }
 
+.start-button-wrapper {
+    clear: both;
+    float: left;
+    width: 100%;
+    button {
+        float: left;
+    }
+    h2 {
+        margin: 4px 0 0 4px;
+        text-transform: uppercase;
+        font-size: 20px;
+        float: left;
+    }
+}
+
 .button {
     font-size: 15px;
     text-transform: uppercase;
@@ -76,7 +94,7 @@ header {
   span {
     font-size: 24px;
     font-weight: bold;
-    color: $yellow;
+    color: white;
   }
 }
 
@@ -107,22 +125,23 @@ header {
   }
 }
 h3 {
-  margin: 13px 0 0;
+  margin: 18px 0 0;
   text-align: center;
   text-transform: uppercase;
   color: white;
+  font-size: 16px;
   font-weight: bold;
 }
 .profession {
   position: absolute;
   width: 176px;
   height: 226px;
-  background: $yellow;
+  background: $red;
   top: 0;
   display: table;
   border: 2px solid $grey;
   &.hover {
-    border-color: $orange;
+    border-color: white;
   }
   /*h3 {
     display: table-cell;
@@ -138,8 +157,8 @@ h3 {
   -webkit-perspective: 1000;
   perspective: 1000;
   p {
-    margin: 7px 13px 13px 13px;
-    font-size: 14px;
+    margin: 10px 13px 13px 13px;
+    font-size: 13px;
     line-height: 1.3;
     text-align: left;
   }
@@ -147,7 +166,7 @@ h3 {
   .back {
     width: $cardWidth;
     height: 226px;
-    background: $orange;
+    background: $yellow;
     z-index: 1;
   }
   &.disabled .back {
@@ -177,7 +196,7 @@ h3 {
   }
   .front {
     z-index: 2;
-    background: url('../img/logo.svg') no-repeat center 59px $orange;
+    background: url('../img/logo.svg') no-repeat center 59px $yellow;
     background-size: 80%;
   }
   .back {
@@ -202,11 +221,11 @@ h3 {
         }
     };
 }
-.game-finished .correct .icon-correct-wrong {
-  background: $green;
+.game-finished .correct .back {
+  background: $correct;
 }
-.game-finished .wrong .icon-correct-wrong {
-  background: $red;
+.game-finished .wrong .back {
+  background: $wrong;
 }
 
 .visible {
