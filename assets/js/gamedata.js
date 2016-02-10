@@ -31,7 +31,7 @@ var gameData = [
         image: imgPath + 'servicevard.png'
     },
     {
-        profession: 'Airportofficer',
+        profession: 'Airport officer',
         description: 'Noggrann, serviceinriktad och språkbegåvad. Bra på att förklara olika regler och kan hantera konflikter även om det är stressigt. Sätter alltid säkerheten först.  Får inte vara färgblind.',
         image: imgPath + 'airportofficer.png'
     },
