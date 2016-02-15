@@ -14,7 +14,7 @@ $correct: #00a03a;
 body {
   margin: 0;
   padding: 0;
-  background: $grey;
+  background: black;
   font-family: sans-serif;
 }
 
@@ -34,7 +34,6 @@ h1 {
 #playground {
   width: 1024px;
   height: 768px;
-  background: $grey;
   position: relative;
   display: inline-block;
 }
@@ -48,6 +47,9 @@ header {
   h1 {
     margin: 40px 0 0 0;
     float: left;
+    span {
+      color: $orange;
+    }
   }
 }
 
@@ -63,6 +65,7 @@ header {
         text-transform: uppercase;
         font-size: 20px;
         float: left;
+        color: white;
     }
 }
 
@@ -89,7 +92,7 @@ header {
   width: 100px;
   float: right;
   text-transform: uppercase;
-  color: black;
+  color: $orange;
   font-size: 10px;
   span {
     font-size: 24px;
@@ -139,7 +142,7 @@ h3 {
   background: $red;
   top: 0;
   display: table;
-  border: 2px solid $grey;
+  border: 2px solid black;
   &.hover {
     border-color: white;
   }
@@ -173,7 +176,7 @@ h3 {
     opacity: .5;
   }
   .card {
-    border: 2px solid $grey;
+    border: 2px solid black;
     width: 176px;
     height: 226px;
     -webkit-transition: 0.6s;
