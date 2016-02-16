@@ -20,13 +20,35 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/assets\/img\/personalbilder\/bovard.jpg": {
-		"fileType": 16384,
+	"\/assets\/img\/personalbilder\/airportofficer.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 13317,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/bovard.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/bovard.jpg",
+		"initialSize": 26114,
+		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/airportofficer.png",
+		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/airportofficer.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/personalbilder\/behandlingsassistent.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31753,
+		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/behandlingsassistent.png",
+		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/behandlingsassistent.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/personalbilder\/bibliotekarie.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21775,
+		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/bibliotekarie.png",
+		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/bibliotekarie.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -42,17 +64,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/personalbilder\/byggnadsingenjor.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 12333,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/byggnadsingenjor.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/byggnadsingenjor.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/img\/personalbilder\/byggnadsingenjor.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -60,17 +71,6 @@
 		"initialSize": 26785,
 		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/byggnadsingenjor.png",
 		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/byggnadsingenjor.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/personalbilder\/ekonom.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 16242,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/ekonom.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/ekonom.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -86,17 +86,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/personalbilder\/elektriker.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 12061,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/elektriker.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/elektriker.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/img\/personalbilder\/elektriker.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -108,35 +97,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/personalbilder\/fastighetsekonom-uthyrare.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 11887,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/fastighetsekonom-uthyrare.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/fastighetsekonom-uthyrare.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/personalbilder\/fastighetsekonom-uthyrare.png": {
+	"\/assets\/img\/personalbilder\/enhetschef.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 34925,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/fastighetsekonom-uthyrare.png",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/fastighetsekonom-uthyrare.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/personalbilder\/foretagslots.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 11587,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/foretagslots.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/foretagslots.jpg",
+		"initialSize": 27019,
+		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/enhetschef.png",
+		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/enhetschef.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -152,17 +119,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/personalbilder\/forskollarare.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 10997,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/forskollarare.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/forskollarare.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/img\/personalbilder\/forskollarare.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -170,17 +126,6 @@
 		"initialSize": 25889,
 		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/forskollarare.png",
 		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/forskollarare.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/personalbilder\/fritidsledare.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 11120,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/fritidsledare.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/fritidsledare.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -196,17 +141,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/personalbilder\/gymnasielarare.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 14592,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/gymnasielarare.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/gymnasielarare.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/img\/personalbilder\/gymnasielarare.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -214,17 +148,6 @@
 		"initialSize": 28697,
 		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/gymnasielarare.png",
 		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/gymnasielarare.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/personalbilder\/it-arkitekt.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 13628,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/it-arkitekt.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/it-arkitekt.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -240,35 +163,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/personalbilder\/jurist.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 12422,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/jurist.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/jurist.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/personalbilder\/jurist.png": {
+	"\/assets\/img\/personalbilder\/kommunikator.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 26555,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/jurist.png",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/jurist.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/personalbilder\/konsumentradgivare.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 11740,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/konsumentradgivare.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/konsumentradgivare.jpg",
+		"initialSize": 24508,
+		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/kommunikator.png",
+		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/kommunikator.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -284,17 +185,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/personalbilder\/miljoinspektor.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 11361,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/miljoinspektor.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/miljoinspektor.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/img\/personalbilder\/miljoinspektor.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -302,17 +192,6 @@
 		"initialSize": 26640,
 		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/miljoinspektor.png",
 		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/miljoinspektor.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/personalbilder\/namndsekreterare.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 12392,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/namndsekreterare.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/namndsekreterare.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -328,35 +207,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/personalbilder\/personalare.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 11579,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/personalare.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/personalare.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/personalbilder\/personalare.png": {
+	"\/assets\/img\/personalbilder\/personalsekreterare.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 24944,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/personalare.png",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/personalare.png",
+		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/personalsekreterare.png",
+		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/personalsekreterare.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/personalbilder\/sjukskoterska.jpg": {
-		"fileType": 16384,
+	"\/assets\/img\/personalbilder\/servicevard.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 10148,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/sjukskoterska.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/sjukskoterska.jpg",
+		"initialSize": 29741,
+		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/servicevard.png",
+		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/servicevard.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -372,17 +240,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/personalbilder\/socialsekreterare.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 10538,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/socialsekreterare.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/socialsekreterare.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/img\/personalbilder\/socialsekreterare.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -394,13 +251,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/personalbilder\/systemforvaltare.jpg": {
-		"fileType": 16384,
+	"\/assets\/img\/personalbilder\/stadsjurist.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 10538,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/systemforvaltare.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/systemforvaltare.jpg",
+		"initialSize": 26555,
+		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/stadsjurist.png",
+		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/stadsjurist.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/personalbilder\/stodassistent.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24473,
+		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/stodassistent.png",
+		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/stodassistent.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -416,17 +284,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/personalbilder\/underskoterska.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 10737,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/underskoterska.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/underskoterska.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/img\/personalbilder\/underskoterska.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -434,6 +291,17 @@
 		"initialSize": 30440,
 		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/underskoterska.png",
 		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/underskoterska.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/personalbilder\/vaktmastare.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25470,
+		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/vaktmastare.png",
+		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/vaktmastare.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

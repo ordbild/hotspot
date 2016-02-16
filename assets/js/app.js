@@ -63,7 +63,12 @@
     };
     var hideScoreComment = function () {
       scoreComments.classList.remove('visible');
-      scoreComments.querySelector('.visible').classList.remove('visible');
+      var comment = scoreComments.querySelector('.visible');
+      // Om man startar om spelet utan att ha slutfört så finns det
+      // ingen synlig kommentar ännu.
+      if (comment) {
+          comment.classList.remove('visible');
+      }
     };
 
     var gameBoard = document.querySelector('.game-board');
