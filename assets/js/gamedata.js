@@ -63,7 +63,7 @@ var gameData = [
     {
         profession: 'Bibliotekarie',
         description: 'Bra på att analysera, förklara och organisera. Lyhörd, servicekänsla och öppen för nya impulser. Samlar, strukturerar och förmedlar information och upplevelser i olika medier.',
-        image: imgPath + 'biblotekarie.png'
+        image: imgPath + 'bibliotekarie.png'
     },
     {
         profession: 'IT-arkitekt',
@@ -131,40 +131,4 @@ var gameData = [
         image: imgPath + 'elektriker.png'
     }
 ];
-/*var gameData = [
-  {
-  profession: 'Städare',
-  description: 'Du gillar att städa',
-  image: ''
-  },
-  {
-  profession: 'Golfare',
-  description: 'Du gillar att spela golf',
-  image: ''
-  },
-  {
-  profession: 'Läkare',
-  description: 'Du räddar liv',
-  image: ''
-  },
-  {
-  profession: 'Polis',
-  description: 'Du är bra på att lösa mordgåtor',
-  image: ''
-  },
-  {
-  profession: 'Lärare',
-  description: 'Du är duktig på att lära ut',
-  image: ''
-  },
-  {
-  profession: 'Legobyggare',
-  description: 'Du bygger saker av små plastbitar.',
-  image: ''
-  },
-  {
-  profession: 'Skådespelare',
-  description: 'Du låtsas att du är någon annan',
-  image: ''
-  }
-  ];*/
+
