@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19115",
+"creatorBuild": "19102",
 "files": {
 	"\/assets\/css\/animate.css": {
 		"fileType": 16,
@@ -19,39 +19,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/assets\/img\/personalbilder\/airportofficer.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 26114,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/airportofficer.png",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/airportofficer.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/personalbilder\/behandlingsassistent.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 31753,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/behandlingsassistent.png",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/behandlingsassistent.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/personalbilder\/bibliotekarie.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 21775,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/bibliotekarie.png",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/bibliotekarie.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		},
 	"\/assets\/img\/personalbilder\/bovard.png": {
 		"fileType": 32768,
@@ -93,17 +60,6 @@
 		"initialSize": 25175,
 		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/elektriker.png",
 		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/elektriker.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/personalbilder\/enhetschef.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 27019,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/enhetschef.png",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/enhetschef.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -163,17 +119,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/personalbilder\/kommunikator.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 24508,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/kommunikator.png",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/kommunikator.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/img\/personalbilder\/konsumentradgivare.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -207,28 +152,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/personalbilder\/personalsekreterare.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 24944,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/personalsekreterare.png",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/personalsekreterare.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/personalbilder\/servicevard.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 29741,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/servicevard.png",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/servicevard.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/img\/personalbilder\/sjukskoterska.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -251,28 +174,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/personalbilder\/stadsjurist.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 26555,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/stadsjurist.png",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/stadsjurist.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/personalbilder\/stodassistent.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 24473,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/stodassistent.png",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/stodassistent.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/assets\/img\/personalbilder\/systemforvaltare.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -291,17 +192,6 @@
 		"initialSize": 30440,
 		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/underskoterska.png",
 		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/underskoterska.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/personalbilder\/vaktmastare.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 25470,
-		"inputAbbreviatedPath": "\/assets\/img\/personalbilder\/vaktmastare.png",
-		"outputAbbreviatedPath": "\/assets\/img\/personalbilder\/vaktmastare.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
