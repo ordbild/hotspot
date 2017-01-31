@@ -16,7 +16,7 @@ Description.prototype.render = function() {
             '<div class="front"></div>'+
             '<div class="back">'+
                 '<h3>&nbsp;</h3>'+
-                '<p>' + this.description + '</p>'+
+                '<ul><li>' + this.description.join('</li><li>') + '</li></ul>'+
             '</div>'+
             '<div class="icon-correct-wrong"></div>'+
         '</div>'

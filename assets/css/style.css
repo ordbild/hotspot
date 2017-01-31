@@ -136,6 +136,12 @@ h3 {
     font-size: 13px;
     line-height: 1.3;
     text-align: left; }
+  .description ul {
+    margin: 0 .5em 0 1.5em;
+    padding: 0;
+    text-align: left; }
+  .description li {
+    margin-bottom: .5em; }
   .description .front,
   .description .back {
     width: 176px;
